@@ -82,7 +82,7 @@ const Sidebar: React.FC<Props> = ({ isOpen, onClose }) => {
                                         <input
                                             value={editTitle}
                                             onChange={(e) => setEditTitle(e.target.value)}
-                                            className="w-full bg-gray-700 text-white px-1 py-0.5 rounded text-sm outline-none border border-blue-500"
+                                            className="w-full bg-gray-700 text-white px-1 py-0.5 rounded-sm text-sm outline-hidden border border-blue-500"
                                             autoFocus
                                         />
                                         <button onClick={saveEdit} className="text-green-400 hover:text-green-300"><Check size={14} /></button>
@@ -98,13 +98,13 @@ const Sidebar: React.FC<Props> = ({ isOpen, onClose }) => {
                                     <div className="hidden group-hover:flex items-center gap-1">
                                         <button
                                             onClick={(e) => startEdit(e, conv.id, conv.title)}
-                                            className="p-1 text-gray-500 hover:text-blue-400 rounded"
+                                            className="p-1 text-gray-500 hover:text-blue-400 rounded-sm"
                                         >
                                             <Edit2 size={14} />
                                         </button>
                                         <button
                                             onClick={(e) => handleDelete(e, conv.id)}
-                                            className="p-1 text-gray-500 hover:text-red-400 rounded"
+                                            className="p-1 text-gray-500 hover:text-red-400 rounded-sm"
                                         >
                                             <Trash2 size={14} />
                                         </button>

@@ -19,25 +19,25 @@ tauri-plugin-store = "2"
 tauri-plugin-shell = "2"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
-reqwest = { version = "0.12", features = ["json"] }
+reqwest = { version = "0.13", features = ["json"] }
 tokio = { version = "1", features = ["full"] }
 uuid = { version = "1.10", features = ["v4", "serde"] }
-dirs = "5.0"
-base64 = "0.22"
+dirs = "7"
+base64 = "0.23"
 anyhow = "1.0"
-thiserror = "1.0"
-chrono = { version = "0.4.42", features = ["serde"] }
+thiserror = "2"
+chrono = { version = "0.4.45", features = ["serde"] }
 
 # CLI Agent dependencies
 clap = { version = "4", features = ["derive"] }
 ignore = "0.4"
-similar = "2"
-colored = "2"
-indicatif = "0.17"
+similar = "3"
+colored = "3"
+indicatif = "0.18"
 walkdir = "2"
 regex = "1"
-crossterm = "0.27"
-ratatui = "0.28"
-tui-textarea = "0.6"
-rusqlite = { version = "0.31", features = ["bundled"] }
-sha2 = "0.10"
+crossterm = "0.28"
+ratatui = "0.29"
+tui-textarea = "0.7"
+rusqlite = { version = "0.41", features = ["bundled"] }
+sha2 = "0.11"

@@ -33,7 +33,7 @@ const MessageInput: React.FC<Props> = ({ onSend, disabled }) => {
 
     return (
         <div className="border-t p-4 bg-white">
-            <form onSubmit={handleSubmit} className="relative flex items-end gap-2 border rounded-xl p-2 bg-white shadow-sm focus-within:ring-2 focus-within:ring-blue-100 focus-within:border-blue-300 transition-all">
+            <form onSubmit={handleSubmit} className="relative flex items-end gap-2 border rounded-xl p-2 bg-white shadow-xs focus-within:ring-2 focus-within:ring-blue-100 focus-within:border-blue-300 transition-all">
                 <textarea
                     ref={textareaRef}
                     value={content}
@@ -41,7 +41,7 @@ const MessageInput: React.FC<Props> = ({ onSend, disabled }) => {
                     onKeyDown={handleKeyDown}
                     placeholder="Type a message..."
                     disabled={disabled}
-                    className="w-full resize-none outline-none max-h-32 bg-transparent text-gray-800 py-2 px-2"
+                    className="w-full resize-none outline-hidden max-h-32 bg-transparent text-gray-800 py-2 px-2"
                     rows={1}
                 />
                 <button

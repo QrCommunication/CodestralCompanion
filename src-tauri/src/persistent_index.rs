@@ -69,7 +69,13 @@ impl PersistentIndex {
     fn hash_content(content: &str) -> String {
         let mut hasher = Sha256::new();
         hasher.update(content.as_bytes());
-        format!("{:x}", hasher.finalize())
+        // sha2 0.11 returns a hybrid-array without LowerHex: hex-encode the bytes ourselves
+        // (same lowercase output as before, so existing index rows stay valid).
+        hasher
+            .finalize()
+            .iter()
+            .map(|byte| format!("{byte:02x}"))
+            .collect()
     }
     
     /// Get modification time as unix timestamp

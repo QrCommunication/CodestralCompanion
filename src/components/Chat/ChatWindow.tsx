@@ -108,7 +108,7 @@ const ChatWindow: React.FC<Props> = ({ onOpenSettings, onToggleSidebar }) => {
                                 }`}
                         >
                             <div
-                                className={`max-w-[85%] rounded-2xl px-5 py-3 shadow-sm ${msg.role === 'user'
+                                className={`max-w-[85%] rounded-2xl px-5 py-3 shadow-xs ${msg.role === 'user'
                                     ? 'bg-blue-600 text-white'
                                     : 'bg-white text-gray-800 border border-gray-100'
                                     }`}
@@ -132,7 +132,7 @@ const ChatWindow: React.FC<Props> = ({ onOpenSettings, onToggleSidebar }) => {
 
                 {isLoading && (
                     <div className="flex w-full justify-start">
-                        <div className="bg-white text-gray-800 border border-gray-100 rounded-2xl px-5 py-3 shadow-sm flex items-center gap-2">
+                        <div className="bg-white text-gray-800 border border-gray-100 rounded-2xl px-5 py-3 shadow-xs flex items-center gap-2">
                             <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
                             <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
                             <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>

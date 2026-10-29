@@ -39,21 +39,21 @@ const WindowControls = () => {
             <button
                 type="button"
                 onClick={handleMinimize}
-                className="w-8 h-8 flex items-center justify-center hover:bg-gray-200 rounded text-gray-600 transition-colors"
+                className="w-8 h-8 flex items-center justify-center hover:bg-gray-200 rounded-sm text-gray-600 transition-colors"
             >
                 <Minus size={16} />
             </button>
             <button
                 type="button"
                 onClick={handleToggleMaximize}
-                className="w-8 h-8 flex items-center justify-center hover:bg-gray-200 rounded text-gray-600 transition-colors"
+                className="w-8 h-8 flex items-center justify-center hover:bg-gray-200 rounded-sm text-gray-600 transition-colors"
             >
                 <Square size={12} />
             </button>
             <button
                 type="button"
                 onClick={handleClose}
-                className="w-8 h-8 flex items-center justify-center hover:bg-red-500 hover:text-white rounded text-gray-600 transition-colors"
+                className="w-8 h-8 flex items-center justify-center hover:bg-red-500 hover:text-white rounded-sm text-gray-600 transition-colors"
             >
                 <X size={16} />
             </button>

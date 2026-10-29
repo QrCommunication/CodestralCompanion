@@ -58,7 +58,7 @@ const SettingsModal: React.FC<Props> = ({ isOpen, onClose }) => {
                         <select
                             value={provider}
                             onChange={(e) => setProvider(e.target.value as ApiProvider)}
-                            className="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500 outline-none"
+                            className="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500 outline-hidden"
                         >
                             <option value="MistralAi">Mistral AI (api.mistral.ai)</option>
                             <option value="Codestral">Codestral (codestral.mistral.ai)</option>
@@ -72,7 +72,7 @@ const SettingsModal: React.FC<Props> = ({ isOpen, onClose }) => {
                             value={apiKey}
                             onChange={(e) => setApiKey(e.target.value)}
                             placeholder="Enter your API Key"
-                            className="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500 outline-none"
+                            className="w-full border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500 outline-hidden"
                         />
                     </div>
 
